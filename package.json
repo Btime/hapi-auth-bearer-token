@@ -22,20 +22,21 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "boom": "^7.1.1",
-    "hoek": "^6.0.0",
-    "joi": "^14.1.0"
+    "boom": "github:btime/boom",
+    "@hapi/hoek": "^6.2.3",
+    "@hapi/joi": "^15.0.3"
   },
   "peerDependencies": {
-    "hapi": ">=17.x.x"
+    "@hapi/hapi": ">=18.x.x"
   },
   "devDependencies": {
-    "code": "^5.1.2",
-    "hapi": "^17.0.1",
-    "lab": "^17.0.0"
+    "@hapi/code": "^5.3.1",
+    "code": "github:hapijs/code#semver:^5.3.1",
+    "@hapi/hapi": "^18.3.0",
+    "@hapi/lab": "^18.1.2"
   },
   "scripts": {
-    "test": "lab -a code -t 100 -L",
+    "test": "lab -a code -t 90",
     "test-cov-html": "lab -a code -r html -o coverage.html"
   },
   "bugs": {
